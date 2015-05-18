@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+    @import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
+@import url(http://fonts.googleapis.com/css?family=Karla:400);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
 
 body {
   padding:50px;
@@ -34,7 +37,7 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  font-family:Inconsolata, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
   font-size:12px;
 }
@@ -149,7 +152,6 @@ hr {
   border:0;
   background:#e5e5e5;
   height:1px;
-  margin:0 0 20px;
 }
 
 footer {
@@ -180,7 +182,6 @@ footer {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
-    margin:0 0 20px;
   }
   
   header a small {
