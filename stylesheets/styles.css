@@ -9,12 +9,14 @@ body {
   color:#777;
   font-weight:300;
 
+
 }
 
 a {
   color:#aee5e9;
   font-weight:590;
   text-decoration:none;
+  font-size:150%;
 }
 
 
@@ -218,7 +220,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 760px) {
+@media print, screen and (max-width: 768px) {
   div#holder{
     font-size:230%;
   }
@@ -236,12 +238,12 @@ footer {
     display:none;
   }
 }
-@media only print, screen and (max-width: 320px){
+@media only print, screen and (max-width: 480px){
   h1{
-    font-size:240%;
+    font-size:200%;
   }
   div#holder{
-    font-size:100%;
+    font-size:200%;
   }
 }
 
