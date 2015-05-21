@@ -236,9 +236,12 @@ footer {
     display:none;
   }
 }
-@media print, screen and (max-width: 320px){
+@media only print, screen and (max-width: 320px){
   h1{
     font-size:240%;
+  }
+  div#holder{
+    font-size:100%;
   }
 }
 
