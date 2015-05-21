@@ -17,10 +17,10 @@ video
     width: auto;
     height: auto;
     z-index: -1;
-    transition: 1s opacity;
+    transition: 10s opacity;
 }
 a:hover{
-  color:#e9b2ae;
+  color:white;
 }
 
 .typed-cursor 
@@ -130,6 +130,7 @@ $(document).ready(function()
         $('#kick2').append('<br><a href="/arts.html">+ ARTS</a>');
     }, 3400);
     setTimeout(function()
+
     {
         // send 'em packing 
         $('#kick3').append('<br><a href="/education.html">+ EDU.</a>');
@@ -148,8 +149,10 @@ $(document).ready(function()
 
 
 
-        <video autoplay loop>
+        <video preload="yes" autoplay loop controls="true">
             <source src="./img/jelly.webm" type="video/webm">
+            <source src="./img/jelly.mp4" type="video/mp4">
+
         </video>
 </body>
 
