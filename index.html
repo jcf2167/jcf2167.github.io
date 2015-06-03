@@ -5,136 +5,62 @@
       <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=10; IE=9; IE=8; IE=7; IE=EDGE">
       <title>Jessica Chen Fan</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <style type="text/css">
-         video {
-         position: fixed;
-         right: 0;
-         bottom: -200px;
-         min-width: 100%;
-         min-height: 100%;
-         width: auto;
-         height: auto;
-         z-index: -1;
-         transition: 10s opacity;
-         }
-         a:hover {
-         color: white;
-         }
-         .typed-cursor {
-         opacity: 1;
-         -webkit-animation: blink 0.7s infinite;
-         -moz-animation: blink 0.7s infinite;
-         animation: blink 0.7s infinite;
-         }
-         @keyframes blink {
-         0% {
-         opacity: 1;
-         }
-         50% {
-         opacity: 0;
-         }
-         100% {
-         opacity: 1;
-         }
-         }
-         @-webkit-keyframes blink {
-         0% {
-         opacity: 1;
-         }
-         50% {
-         opacity: 0;
-         }
-         100% {
-         opacity: 1;
-         }
-         }
-         @-moz-keyframes blink {
-         0% {
-         opacity: 1;
-         }
-         50% {
-         opacity: 0;
-         }
-         100% {
-         opacity: 1;
-         }
-         }
-         #element {
-         padding: 10px;
-         max-width: 100%;
-         display: block;
-         white-space: pre;
-         line-height: 1.25em;
-         }
-         #element:after {
-         visibility: visible;
-         content: '';
-         display: inline-block;
-         position: relative;
-         width: 0.5em;
-         height: 1em;
-         top: 5px;
-         margin-left: 0;
-         -moz-box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
-         -webkit-box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
-         box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
-         -moz-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
-         -webkit-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
-         animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
-         }
-      </style>
+      <link rel="stylesheet" type="text/css" href="stylesheets/vid.css">
       <script src="javascripts/detect.js"></script>
       <link rel="stylesheet" href="stylesheets/styles.css">
       <link rel="stylesheet" href="stylesheets/pygment_trac.css">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Wire+One|Julius+Sans+One|Megrim|Chivo|Gruppo|Slabo+27px|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="javascripts/typed.js"></script>
    </head>
    <body>
       <div class="wrapper">
-      <link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Wire+One|Julius+Sans+One|Megrim|Chivo|Gruppo|Slabo+27px|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    
       <h1 style="color:white; font-family: 'Megrim', cursive;">J E S S I C A . C H E N . F A N</h1>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="javascripts/typed.js"></script>
+      
       <script>
         
             $(window).on('load', function()
             {
                 Browsers = new WhichBrowser();
-                if(Browsers.browser==="Chrome" || Browsers.browser==="Safari"){
-                    
+                if(Browsers.browser.name==="Chrome" || Browsers.browser.name==="Safari"){
+                    console.log("here")
+                         $(function()
+                            {
+                                $(".element").typed(
+                                {
+                                    strings: ["Welcome Prisoner.", "Welcome Friend,\n What brings you here today?"],
+                                    typeSpeed: -30
+                                });
+                            });
+
 
                 }
-                console.log(Browsers.os.version)
-                console.log(Browsers.browser.version)
+                console.log(Browsers.os)
+                console.log(Browsers.browser)
             });
 
-            $(function()
-            {
-                $(".element").typed(
-                {
-                    strings: ["Welcome Prisoner.", "Welcome Friend,\n What brings you here today?"],
-                    typeSpeed: -30
-                });
-            });
-
+           
             $(document).ready(function()
             {
                 setTimeout(function()
                 {
                     // send 'em packing 
-                    $('#kickCode').append('<br><a href="/code.html">+ CODE</a>');
-                }, 3200);
+                    $('#kickCode').append('<br><a href="code.html">+ CODE</a>');
+                }, 3000);
                 setTimeout(function()
                 {
                     // send 'em packing 
-                    $('#kickArt').append('<br><a href="/arts.html">+ ARTS</a>');
-                }, 3400);
+                    $('#kickArt').append('<br><a href="arts.html">+ ARTS</a>');
+                }, 3200);
                 setTimeout(function()
 
                     {
                         // send 'em packing 
-                        $('#kickEdu').append('<br><a href="/education.html">+ EDU.</a>');
-                    }, 3500);
+                        $('#kickEdu').append('<br><a href="education.html">+ EDU.</a>');
+                    }, 3400);
             });
              
       </script>

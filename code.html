@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1;IE=10; IE=9; IE=8; IE=7; IE=EDGE">
+      <title>Jessica Chen Fan</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="stylesheets/vid.css">
+      <script src="javascripts/detect.js"></script>
+      <link rel="stylesheet" href="stylesheets/styles.css">
+      <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Wire+One|Julius+Sans+One|Megrim|Chivo|Gruppo|Slabo+27px|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="javascripts/typed.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+     <h1 style="color:white; font-family: 'Megrim', cursive;">J E S S I C A . C H E N . F A N</h1>
+      <script>
+        
+            $(window).on('load', function()
+            {
+                Browsers = new WhichBrowser();
+                if(Browsers.browser.name==="Chrome" || Browsers.browser.name==="Safari"){
+                    console.log("here")
+                         $(function()
+                            {
+                                $(".element").typed(
+                                {
+                                    strings: ["Welcome Prisoner.", "Welcome Friend,\n What brings you here today?"],
+                                    typeSpeed: -30
+                                });
+                            });
+
+
+                }
+                console.log(Browsers.os)
+                console.log(Browsers.browser)
+            });
+
+           
+            $(document).ready(function()
+            {
+                setTimeout(function()
+                {
+                    // send 'em packing 
+                    $('#kickCode').append('<br><a href="/code.html">+ CODE</a>');
+                }, 3000);
+                setTimeout(function()
+                {
+                    // send 'em packing 
+                    $('#kickArt').append('<br><a href="/arts.html">+ ARTS</a>');
+                }, 3200);
+                setTimeout(function()
+
+                    {
+                        // send 'em packing 
+                        $('#kickEdu').append('<br><a href="/education.html">+ EDU.</a>');
+                    }, 3400);
+            });
+             
+      </script>
+      <div id="holder" style="color:white;">
+         <span style="white-space:pre" class="element"></span>
+         <span id="kick" style="margin: 10px;"></span>
+         <span id="kickCode" style=" margin: 10px;"></span>
+         <span id="kickArt" style="margin: 10px;"></span>
+         <span id="kickEdu" style="margin: 10px;"></span>
+      </div>
+      <video preload="yes" autoplay="false" loop controls="true">
+         <source src="./img/jelly.webm" type="video/webm">
+         <source src="./img/jelly.mp4" type="video/mp4">
+      </video>
+   </body>
+</html>
