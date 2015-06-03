@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 
@@ -7,8 +8,7 @@
     <title>Jessica Chen Fan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style type="text/css">
-video 
-{
+video {
     position: fixed;
     right: 0;
     bottom: -200px;
@@ -19,12 +19,12 @@ video
     z-index: -1;
     transition: 10s opacity;
 }
-a:hover{
-  color:white;
+
+a:hover {
+    color: white;
 }
 
-.typed-cursor 
-{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -74,6 +74,7 @@ a:hover{
     white-space: pre;
     line-height: 1.25em;
 }
+
 #element:after {
     visibility: visible;
     content: '';
@@ -91,28 +92,38 @@ a:hover{
     animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
 }
     </style>
+
+    <script src="whichbrowser/detect.js"></script>
+  
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Wire+One|Julius+Sans+One|Megrim|Chivo|Gruppo|Slabo+27px|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <h1 style="color:white; font-family: 'Megrim', cursive;">J E S S I C A . C H E N . F A N</h1>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="javascripts/typed.js"></script>
-
         <script>
+
+    
+    $(window).on('load', function() {
+            Browsers = new WhichBrowser();
+            
+
+            console.log(Browsers.os.version)
+            console.log(Browsers.browser.version)
+    });
+   
 $(function()
 {
     $(".element").typed(
     {
-        strings: ["Welcome Guest.", "Welcome Friend,\n What brings you here today?"],
+        strings: ["Welcome Prisoner.", "Welcome Friend,\n What brings you here today?"],
         typeSpeed: -10
     });
 });
@@ -122,37 +133,31 @@ $(document).ready(function()
     setTimeout(function()
     {
         // send 'em packing 
-        $('#kick').append('<br><a href="/staticIndex.html">+ CODE</a>');
+        $('#kickCode').append('<br><a href="/code.html">+ CODE</a>');
     }, 3200);
     setTimeout(function()
     {
         // send 'em packing 
-        $('#kick2').append('<br><a href="/arts.html">+ ARTS</a>');
+        $('#kickArt').append('<br><a href="/arts.html">+ ARTS</a>');
     }, 3400);
     setTimeout(function()
 
-    {
-        // send 'em packing 
-        $('#kick3').append('<br><a href="/education.html">+ EDU.</a>');
-    }, 3500);
+        {
+            // send 'em packing 
+            $('#kickEdu').append('<br><a href="/education.html">+ EDU.</a>');
+        }, 3500);
 });
-
         </script>
         <div id="holder" style="color:white;">
             <span style="white-space:pre" class="element"></span>
             <span id="kick" style="margin: 10px;"></span>
-            <span id="kick2" style=" margin: 10px;"></span>
-            <span id="kick3" style="margin: 10px;"></span>
-            <span id="kick4" style="margin: 10px;"></span>
-
+            <span id="kickCode" style=" margin: 10px;"></span>
+            <span id="kickArt" style="margin: 10px;"></span>
+            <span id="kickEdu" style="margin: 10px;"></span>
         </div>
-
-
-
         <video preload="yes" autoplay="false" loop controls="true">
             <source src="./img/jelly.webm" type="video/webm">
             <source src="./img/jelly.mp4" type="video/mp4">
-
         </video>
 </body>
 
