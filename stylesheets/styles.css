@@ -4,7 +4,8 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
 
 body {
-  padding:50px;
+  min-height: 100%;
+ 
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -22,8 +23,6 @@ a {
 
 
 .wrapper {
-  width:860px;
-  margin:0 auto;
 }
 
 blockquote {
@@ -40,7 +39,6 @@ code, pre {
 }
 
 pre {
-  padding:8px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -72,7 +70,6 @@ img {
 }
 
 header {
-  width:270px;
   float:left;
   position:fixed;
 }
